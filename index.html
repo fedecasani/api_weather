@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <form id="weatherForm">
+            <input 
+                type="text" 
+                id="cityInput" 
+                class="text" 
+                placeholder="Enter city name" 
+            />
+            <button type="submit" class="submit">Consultar</button>
+        </form>
+    </div>
+
+    <div class="widget" id="weatherWidget">
+        <div class="weatherIcon">
+            <img src="" alt="Weather Icon" id="weatherIcon" />
+        </div>
+        <div class="weatherInfo">
+            <div class="temperature" id="temperature"></div>
+            <div class="description">
+                <div class="weatherCondition" id="weatherCondition"></div>
+                <div class="place" id="place"></div>
+            </div>
+            <div class="description">
+                <div class="weatherCondition">Wind</div>
+                <div class="place" id="windSpeed"></div>
+            </div>
+        </div>
+        <div class="date" id="date"></div>
+        <button class="close" id="closeWidget">X</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
